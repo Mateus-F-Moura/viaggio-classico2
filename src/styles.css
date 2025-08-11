@@ -1,8 +1,5 @@
 html, body {
     height: 100%;
-    margin: 0;
-}
-body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
@@ -15,6 +12,7 @@ nav{
 }
 main{
     flex: 1;
+    padding-inline: 10%;
 }
 h1, h2, h3 {
     text-align: center;
