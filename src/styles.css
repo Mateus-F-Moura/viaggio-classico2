@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+h1, h2, h3 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4A0E0E;
+}
+#sobre-nos, #destinos {
+    margin-top: 30px;
+}
+#red{
+    color:#4A0E0E
+}
+#green{
+    color:#556B2F
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 60px;
+}

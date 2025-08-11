@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Viaggio Classico</title>
 </head>
+
 <body>
-    <header></header>
-    <footer></footer>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="logo.png" width="150" alt="Logo"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="red" href="roma.html">Roma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="green" href="veneza.html">Veneza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="red" href="milan.html">Milão</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="green" href="napoli.html">Napoli</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="carousel">
+            <!-- Carousel -->
+        </section>
+        <section id="sobre-nos">
+            <h1>Sobre Nós</h1>
+            <p>Bem-vindo ao Viaggio Classico! Somos especialistas apaixonados por mostrar o melhor da Itália para você.
+                Com anos de experiência e conhecimento profundo das cidades, cultura, gastronomia e história italianas,
+                nosso objetivo é proporcionar viagens inesquecíveis e autênticas.</p>
+            <p>Seja você um visitante de primeira viagem ou um amante da Itália buscando novos tesouros, estamos aqui
+                para ajudar você a explorar os destinos clássicos e também aqueles menos conhecidos, garantindo uma
+                experiência completa e personalizada.</p>
+        </section>
+        <section id="destinos">
+            <h2>Confira Nossos Destinos</h2>
+            <!-- Destinos em Cards -->
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="text-center">© 2023 Viaggio Classico. Todos os direitos reservados.</p>
+            <p class="text-center">Siga-nos nas redes sociais: 
+                <a href="#" class="text-decoration-none">Facebook</a> | 
+                <a href="#" class="text-decoration-none">Instagram</a> | 
+                <a href="#" class="text-decoration-none">Twitter</a>
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
