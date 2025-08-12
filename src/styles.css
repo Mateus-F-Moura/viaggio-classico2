@@ -9,12 +9,13 @@ body {
 }
 
 nav {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Copernicus New Condensed", serif;
     font-size: large;
 }
 
 .carousel {
     margin: auto;
+    width: 100%;
 }
 
 main {
@@ -26,7 +27,8 @@ h1,
 h2,
 h3 {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Copernicus New Condensed", serif;
+    font-size: 40px;
     color: #4A0E0E;
 }
 
@@ -43,5 +45,6 @@ footer {
     background-color: #f8f9fa;
     padding: 20px;
     border-top: 1px solid #eee;
-    margin-top: 60px;
 }
+
+/* alterando configurações pré-settadas */
