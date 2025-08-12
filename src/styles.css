@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -6,28 +7,49 @@ html, body {
     line-height: 1.6;
     text-align: center;
 }
-nav{
+
+nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
 }
-main{
+
+.carousel {
+    width: 85%;
+    margin: auto;
+}
+
+main {
     flex: 1;
     padding-inline: 10%;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4A0E0E;
 }
-.sobre-nos, .destinos {
+
+.destinos {
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.sobre-nos,
+.destinos {
     margin-top: 30px;
 }
-.red{
-    color:#4A0E0E;
+
+.red {
+    color: #4A0E0E;
 }
-.green{
-    color:#556B2F
+
+.green {
+    color: #556B2F
 }
+
 footer {
     background-color: #f8f9fa;
     padding: 20px;
