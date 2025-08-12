@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,35 +12,54 @@
     <link rel="stylesheet" href="styles.css">
     <title>Milão</title>
 </head>
+
 <body>
     <header id="topo"></header>
     <main>
-        <h2>Pontos turísticos em Milão</h2>
-        <div class="row">
+        <h2 class="mt-5">Pontos turísticos em Milão</h2>
+        <div class="row d-flex justify-content-center mt-5">
             <!-- Img grande (banner) -->
             <img src="./img/duomo1.jpg" alt="" style="width: 50%;">
         </div>
-        <div class="row">
+        <div class="row mt-5 align-content-center">
             <div class="col">
                 <img src="./img/Milan_Cathedral_from_Piazza_del_Duomo.jpg" alt="">
                 <!-- img -->
             </div>
             <div class="col">
-                <!-- Texto -->
+                <h1>Duomo di Milano</h1>
+                <p>A Catedral de Milão é uma obra-prima da arquitetura gótica, com centenas de pináculos e milhares de
+                    estátuas. Sua construção começou em 1386 e só foi oficialmente finalizada em 1965. Do terraço, é
+                    possível apreciar uma vista panorâmica de toda a cidade.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5 align-content-center">
             <div class="col">
                 <img src="./img/Veduta_della_Galleria_Vittorio_Emanuele_II_da_piazza_del_Duomo,_Milano.jpg" alt="">
                 <!-- img 2 -->
             </div>
             <div class="col">
-                <!-- Texto 2 -->
+                <h1>Galeria Vittorio Emanuele II</h1>
+                <p>Inaugurada em 1877, essa galeria é uma verdadeira joia arquitetônica, com seu teto de vidro e ferro e
+                    piso de mosaicos coloridos. Conecta a Piazza del Duomo à Piazza della Scala e abriga cafés,
+                    restaurantes e lojas de luxo.</p>
             </div>
         </div>
+        <section class="curiosidade mt-5 d-flex justify-content-center">
+            <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Curiosidade</div>
+                <div class="card-body">
+                    <h5 class="card-title">Curiosidade de Milão</h5>
+                    <p class="card-text">Milão é reconhecida como uma das capitais mundiais da moda e do design. Todos
+                        os anos, atrai estilistas, artistas e empresários para eventos de prestígio, como a Milan
+                        Fashion Week, que movimenta a economia e dita tendências globais.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer id="rodape"></footer>
+    <footer id="rodape" class=" mt-5"></footer>
 </body>
+
 </html>
 
 <script src="./js/carregarHeaderEfooter.js"></script>

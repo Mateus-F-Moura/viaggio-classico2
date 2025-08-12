@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,35 +12,57 @@
     <link rel="stylesheet" href="styles.css">
     <title>Veneza</title>
 </head>
+
 <body>
     <header id="topo"></header>
     <main style="margin: auto;">
-        <h2>Pontos turísticos em Veneza</h2>
-        <div class="row">
+        <h2 class="mt-5">Pontos turísticos em Veneza</h2>
+        <div class="row d-flex justify-content-center mt-5">
             <!-- Img grande (banner) -->
             <img src="./img/rialto2.jpg" alt="" style="width: 50%;">
         </div>
-        <div class="row">
+        <div class="row mt-5 align-content-center">
             <div class="col">
                 <img src="./img/rialto1.jpg" alt="">
                 <!-- img -->
             </div>
             <div class="col">
-                <!-- Texto -->
+                <h1>Ponte de Rialto</h1>
+                <p>A Ponte de Rialto é a mais antiga a cruzar o Grande Canal, concluída em 1591. Seu arco de pedra e as
+                    lojas que a ladeiam transformam a travessia em uma experiência única, misturando paisagem, comércio
+                    e história. É um ponto perfeito para observar o movimento incessante dos barcos que cortam Veneza.
+                </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5 align-content-center">
             <div class="col">
                 <img src="./img/sanmarco1.jpg" alt="">
                 <!-- img 2 -->
             </div>
             <div class="col">
-                <!-- Texto 2 -->
+                <h1>Piazza San Marco</h1>
+                <p>A Piazza San Marco é o coração de Veneza, cercada por construções históricas como a Basílica de São
+                    Marcos e o Palácio Ducal. É famosa por sua beleza arquitetônica e pela atmosfera viva, especialmente
+                    nos cafés ao ar livre com música. Durante a maré alta, parte da praça pode ficar inundada, criando
+                    reflexos mágicos da cidade.
+                </p>
             </div>
         </div>
+        <section class="curiosidade mt-5 d-flex justify-content-center">
+            <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Curiosidade</div>
+                <div class="card-body">
+                    <h5 class="card-title">Curiosidade de Veneza</h5>
+                    <p class="card-text">Veneza é formada por mais de 100 ilhas ligadas por pontes e separadas por
+                        canais. Por não ter ruas convencionais, seu principal meio de transporte é a gôndola ou barcos
+                        públicos chamados “vaporetti”, o que faz dela uma cidade única no mundo.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer id="rodape"></footer>
+    <footer id="rodape" class=" mt-5"></footer>
 </body>
+
 </html>
 
 <script src="./js/carregarHeaderEfooter.js"></script>
