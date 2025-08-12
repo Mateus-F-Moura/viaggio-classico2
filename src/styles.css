@@ -14,7 +14,6 @@ nav {
 }
 
 .carousel {
-    width: 85%;
     margin: auto;
 }
 
@@ -31,16 +30,6 @@ h3 {
     color: #4A0E0E;
 }
 
-.destinos {
-    display: flex;
-    gap: 20px;
-    padding-top: 50px;
-}
-
-.sobre-nos,
-.destinos {
-    margin-top: 30px;
-}
 
 .red {
     color: #4A0E0E;
