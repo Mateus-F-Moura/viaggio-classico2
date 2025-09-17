@@ -2,140 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles.css">
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Viaggio Classico</title>
 </head>
 
 <body>
     <header id="topo"></header>
-    <main>
-        <div class="row">
-            <div class="col-7">
-                <section class="carousel">
-                    <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/visita2.jpg" class="d-block w-100" alt="Itália">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/visita.jpg" class="d-block w-100" alt="Passeio em Veneza">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/visita3.jpg" class="d-block w-100" alt="Vista pro mar">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </section>
 
+    <main>
+        <section class="hero">
+            <div class="hero-banner">
+                <div id="carouselExampleAutoplaying" class="carousel slide mt-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/visita2.jpg" class="d-block w-100" alt="Itália">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/visita.jpg" class="d-block w-100" alt="Passeio em Veneza">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/visita3.jpg" class="d-block w-100" alt="Vista pro mar">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div class="col-5">
-                <section class="sobre-nos m-auto mt-5" style="width: 80%;">
-                    <h2 class="mb-5" style="font-size: xx-large;">Sobre Nós</h2>
-                    <div class="row">
-                        <p>Bem-vindo ao Viaggio Classico! Somos especialistas apaixonados por mostrar o melhor da Itália
-                            para você.
-                            Com mais de 15 anos de experiência e conhecimento profundo das cidades, cultura, gastronomia
-                            e
-                            história italianas,
-                            nosso objetivo é proporcionar viagens inesquecíveis e autênticas que tocam a alma e criam
-                            memórias duradouras.</p>
-                    </div>
-                    <div class="row">
-                        <p>Nossa equipe é formada por profissionais italianos e brasileiros que conhecem cada cantinho
-                            especial do país.
-                            Trabalhamos com os melhores guias locais, hotéis selecionados e restaurantes tradicionais
-                            para
-                            garantir que sua
-                            experiência seja única e genuína.</p>
-                    </div>
-                    <div class="row">
-                        <p>Seja você um visitante de primeira viagem ou um amante da Itália buscando novos tesouros,
-                            estamos
-                            aqui
-                            para ajudar você a explorar os destinos clássicos e também aqueles menos conhecidos,
-                            garantindo
-                            uma
-                            experiência completa e personalizada. Do planejamento à execução, cuidamos de cada detalhe
-                            para
-                            que você
-                            aproveite o melhor da dolce vita italiana.</p>
-                    </div>
-                </section>
+
+            <div class="hero-content">
+                <h2 class="hero-title mt-0">Sobre Nós</h2>
+                <div class="hero-text">
+                    <p>Bem-vindo ao Viaggio Classico! Somos especialistas apaixonados por mostrar o melhor da Itália para você.
+                        Com mais de 15 anos de experiência e conhecimento profundo das cidades, cultura, gastronomia e história italianas,
+                        nosso objetivo é proporcionar viagens inesquecíveis e autênticas que tocam a alma e criam memórias duradouras.</p>
+                    <p>Nossa equipe é formada por profissionais italianos e brasileiros que conhecem cada cantinho especial do país.
+                        Trabalhamos com os melhores guias locais, hotéis selecionados e restaurantes tradicionais para garantir que sua experiência seja única.</p>
+                    <a href="./pages/forms.html" class="btn btn-primary mt-2">Viaje e crie sua história</a>
+                </div>
             </div>
-        </div>
+        </section>
+
         <section class="destinos m-auto mt-5">
-            <h2 class="mb-5">Confira Nossos Destinos</h2>
+            <h2 class="section-subtitle">Confira Nossos Destinos</h2>
             <div class="row">
                 <div class="col-3">
                     <div class="card" style="width: 18rem;">
-                    <img src="./img/roma.jpg" class="card-img-top" alt="roma">
-                    <div class="card-body">
-                        <h5 class="card-title">Roma</h5>
-                        <p class="card-text">A capital da Itália e um museu a céu aberto. Lar do Coliseu, Fórum Romano e
-                            Vaticano, mistura história antiga, arte e gastronomia inesquecível.</p>
-                        <a href="roma.html" class="btn btn-primary">Vá a Roma</a>
+                        <img src="./img/roma.jpg" class="card-img-top" alt="roma">
+                        <div class="card-body">
+                            <h5 class="card-title">Roma</h5>
+                            <p class="card-text">A capital da Itália e um museu a céu aberto. Lar do Coliseu, Fórum Romano e Vaticano.</p>
+                            <a href="./pages/roma.html" class="btn btn-primary">Vá a Roma</a>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-3">
                     <div class="card" style="width: 18rem;">
-                    <img src="./img/veneza.jpg" class="card-img-top" alt="veneza">
-                    <div class="card-body">
-                        <h5 class="card-title">Veneza</h5>
-                        <p class="card-text">Cidade única construída sobre canais. Conhecida por gôndolas, a Praça
-                            de São
-                            Marcos e a arquitetura romântica que encanta visitantes de todo o mundo.</p>
-                        <a href="veneza.html" class="btn btn-primary">Vá a Veneza</a>
+                        <img src="./img/veneza.jpg" class="card-img-top" alt="veneza">
+                        <div class="card-body">
+                            <h5 class="card-title">Veneza</h5>
+                            <p class="card-text">Cidade única construída sobre canais. Conhecida por gôndolas e a Praça de São Marcos.</p>
+                            <a href="./pages/veneza.html" class="btn btn-primary">Vá a Veneza</a>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-3">
                     <div class="card" style="width: 18rem;">
-                    <img src="./img/milão.jpg" class="card-img-top" alt="milão">
-                    <div class="card-body">
-                        <h5 class="card-title">Milão</h5>
-                        <p class="card-text">Centro da moda e do design italiano. Abriga a famosa Catedral de Milão,
-                            a
-                            Última Ceia de Da Vinci e uma vida urbana vibrante.</p>
-                        <a href="milan.html" class="btn btn-primary">Vá a Milão</a>
+                        <img src="./img/milão.jpg" class="card-img-top" alt="milão">
+                        <div class="card-body">
+                            <h5 class="card-title">Milão</h5>
+                            <p class="card-text">Centro da moda e do design italiano. Abriga a famosa Catedral de Milão.</p>
+                            <a href="./pages/milan.html" class="btn btn-primary">Vá a Milão</a>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-3">
                     <div class="card" style="width: 18rem;">
-                    <img src="./img/napoli.jpg" class="card-img-top" alt="napoli">
-                    <div class="card-body">
-                        <h5 class="card-title">Nápoles</h5>
-                        <p class="card-text">Berço da pizza e porta de entrada para a Costa Amalfitana. Rica em
-                            cultura, com
-                            vistas para o Vesúvio e proximidade de Pompeia.</p>
-                        <a href="napoli.html" class="btn btn-primary">Vá a Nápoles</a>
+                        <img src="./img/napoli.jpg" class="card-img-top" alt="napoli">
+                        <div class="card-body">
+                            <h5 class="card-title">Nápoles</h5>
+                            <p class="card-text">Berço da pizza e porta de entrada para a Costa Amalfitana.</p>
+                            <a href="./pages/napoli.html" class="btn btn-primary">Vá a Nápoles</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer id="rodape" class="mt-5"></footer>
+
+    <script src="./js/carregarHeaderEfooter.js"></script>
 </body>
 
 </html>
-
-<script src="./js/carregarHeaderEfooter.js"></script>
