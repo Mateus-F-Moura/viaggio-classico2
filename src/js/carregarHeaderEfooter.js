@@ -15,7 +15,6 @@
         if (typeof onLoaded === 'function') onLoaded();
       })
       .catch((err) => {
-        // Log mínimo; pode ajustar para mostrar mensagem na UI se desejar
         console.error(err);
       });
   }
@@ -28,22 +27,18 @@
   function adjustHeaderPaths(headerEl) {
     if (!headerEl) return;
 
-    // Ajusta links marcados com data-page (definidos no componente header)
     const links = headerEl.querySelectorAll('[data-page]');
     links.forEach((a) => {
       const page = a.getAttribute('data-page');
       if (!page) return;
 
       if (inPagesFolder) {
-        // Página está em src/pages -> links para outras páginas devem ser relativos a pages/
         a.setAttribute('href', page === 'index.html' ? '../index.html' : page);
       } else {
-        // Página está em src (root) -> links para páginas devem apontar para ./pages/...
         a.setAttribute('href', page === 'index.html' ? './index.html' : `./pages/${page}`);
       }
     });
 
-    // Ajusta caminho do logo/imagem dentro do header
     const logo = headerEl.querySelector('.navbar-brand img, img[alt="Logo"]');
     if (logo) {
       logo.setAttribute('src', inPagesFolder ? '../img/logo.png' : './img/logo.png');
@@ -68,12 +63,10 @@
     });
   }
 
-  // Carrega header e ajusta caminhos / marca link ativo
   fetchComponent('header.html', 'topo', () => {
     adjustHeaderPaths(document.getElementById('topo'));
     markActiveLink();
   });
 
-  // Carrega footer sem ajustes adicionais
   fetchComponent('footer.html', 'rodape');
 })();
