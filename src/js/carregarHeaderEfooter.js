@@ -1,7 +1,9 @@
 (function () {
-  // Detecta se a página está dentro da pasta "pages" para ajustar caminhos relativos
-  const inPagesFolder = location.pathname.includes('/pages/');
-  const componentsBase = inPagesFolder ? '../components/' : './components/';
+  // Detecta se a página está dentro da pasta "pages" ou "backend" para ajustar caminhos relativos
+  const path = location.pathname || '';
+  const inPagesFolder = path.includes('/pages/');
+  const inBackendFolder = path.includes('/backend/');
+  const componentsBase = (inPagesFolder || inBackendFolder) ? '../components/' : './components/';
 
   function fetchComponent(fileName, elementId, onLoaded) {
     fetch(componentsBase + fileName)
@@ -19,9 +21,9 @@
       });
   }
 
-  function fileNameFromPath(path) {
-    if (!path) return '';
-    return path.split('/').pop();
+  function fileNameFromPath(p) {
+    if (!p) return '';
+    return p.split('/').pop();
   }
 
   function adjustHeaderPaths(headerEl) {
@@ -34,6 +36,8 @@
 
       if (inPagesFolder) {
         a.setAttribute('href', page === 'index.html' ? '../index.html' : page);
+      } else if (inBackendFolder) {
+        a.setAttribute('href', page === 'index.html' ? '../index.html' : `../pages/${page}`);
       } else {
         a.setAttribute('href', page === 'index.html' ? './index.html' : `./pages/${page}`);
       }
@@ -41,7 +45,8 @@
 
     const logo = headerEl.querySelector('.navbar-brand img, img[alt="Logo"]');
     if (logo) {
-      logo.setAttribute('src', inPagesFolder ? '../img/logo.png' : './img/logo.png');
+      const logoPath = (inPagesFolder || inBackendFolder) ? '../assets/img/logo.png' : './assets/img/logo.png';
+      logo.setAttribute('src', logoPath);
     }
   }
 
@@ -51,11 +56,11 @@
 
     links.forEach((link) => {
       const dataPage = link.getAttribute('data-page');
-      const href = link.getAttribute('href');
-      const candidate = dataPage || href || '';
+      const href = link.getAttribute('href') || '';
+      const candidate = dataPage || href;
       const candidateFile = fileNameFromPath(candidate);
 
-      if (candidateFile === currentPage) {
+      if (candidateFile && candidateFile === currentPage) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');

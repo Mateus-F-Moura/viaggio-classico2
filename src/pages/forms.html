@@ -83,25 +83,5 @@
   <footer id="rodape" class="mt-5"></footer>
 
   <script src="../js/carregarHeaderEfooter.js"></script>
-  <script>
-    (function () {
-      const form = document.getElementById('requestForm');
-      const success = document.getElementById('formSuccess');
-
-      form.addEventListener('submit', function (e) {
-        if (!form.checkValidity()) {
-          e.preventDefault();
-          e.stopPropagation();
-          form.classList.add('was-validated');
-          return;
-        }
-        e.preventDefault();
-        form.reset();
-        form.classList.remove('was-validated');
-        success.classList.remove('d-none');
-        success.scrollIntoView({ behavior: 'smooth' });
-      }, false);
-    })();
-  </script>
 </body>
 </html>
