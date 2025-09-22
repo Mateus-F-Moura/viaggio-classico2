@@ -1,6 +1,6 @@
 <?php 
 $servername = "localhost";
-$database   = "viaggioclassico2";
+$database   = "viaggio";
 $username   = "root";
 $password   = "";
 $port       = "3306";

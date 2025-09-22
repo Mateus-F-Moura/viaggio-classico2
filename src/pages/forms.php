@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <title>Viaje e crie sua história — Viaggio Classico</title>
-</head>
+<?php include '../components/header.php'; ?>
 
 <body>
-  <header id="topo"></header>
-
   <main class="container my-5">
     <h2 class="section-subtitle">Viaje e crie sua história</h2>
 
@@ -72,7 +60,7 @@
 
           <div class="col-12">
             <button class="btn btn-primary" type="submit">Enviar solicitação</button>
-            <a href="../index.html" class="btn btn-secondary ms-2">Voltar</a>
+            <a href="../index.php" class="btn btn-secondary ms-2">Voltar</a>
           </div>
         </div>
       </form>
@@ -82,10 +70,6 @@
       </div>
     </section>
   </main>
-
-  <footer id="rodape" class="mt-5"></footer>
-
-  <script src="../js/carregarHeaderEfooter.js"></script>
 </body>
 
-</html>
+<?php include '../components/footer.php'; ?>

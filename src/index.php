@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../src/assets/css/styles.css" />
-    <title>Viaggio Classico</title>
-</head>
+<?php include './components/header.php'; ?>
 
 <body>
-    <header id="topo"></header>
-
     <main>
         <section class="hero">
             <div class="hero-banner">
@@ -51,7 +37,7 @@
                         nosso objetivo é proporcionar viagens inesquecíveis e autênticas que tocam a alma e criam memórias duradouras.</p>
                     <p>Nossa equipe é formada por profissionais italianos e brasileiros que conhecem cada cantinho especial do país.
                         Trabalhamos com os melhores guias locais, hotéis selecionados e restaurantes tradicionais para garantir que sua experiência seja única.</p>
-                    <a href="./pages/forms.html" class="btn btn-primary mt-2">Viaje e crie sua história</a>
+                    <a href="./pages/forms.php" class="btn btn-primary mt-2">Viaje e crie sua história</a>
                 </div>
             </div>
         </section>
@@ -65,7 +51,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Roma</h5>
                             <p class="card-text">A capital da Itália e um museu a céu aberto. Lar do Coliseu, Fórum Romano e Vaticano.</p>
-                            <a href="./pages/roma.html" class="btn btn-primary">Vá a Roma</a>
+                            <a href="./pages/roma.php" class="btn btn-primary">Vá a Roma</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +61,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Veneza</h5>
                             <p class="card-text">Cidade única construída sobre canais. Conhecida por gôndolas e a Praça de São Marcos.</p>
-                            <a href="./pages/veneza.html" class="btn btn-primary">Vá a Veneza</a>
+                            <a href="./pages/veneza.php" class="btn btn-primary">Vá a Veneza</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +71,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Milão</h5>
                             <p class="card-text">Centro da moda e do design italiano. Abriga a famosa Catedral de Milão.</p>
-                            <a href="./pages/milan.html" class="btn btn-primary">Vá a Milão</a>
+                            <a href="./pages/milan.php" class="btn btn-primary">Vá a Milão</a>
                         </div>
                     </div>
                 </div>
@@ -95,17 +81,13 @@
                         <div class="card-body">
                             <h5 class="card-title">Nápoles</h5>
                             <p class="card-text">Berço da pizza e porta de entrada para a Costa Amalfitana.</p>
-                            <a href="./pages/napoli.html" class="btn btn-primary">Vá a Nápoles</a>
+                            <a href="./pages/napoli.php" class="btn btn-primary">Vá a Nápoles</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer id="rodape" class="mt-5"></footer>
-
-    <script src="./js/carregarHeaderEfooter.js"></script>
 </body>
 
-</html>
+<?php include './components/footer.php'; ?>

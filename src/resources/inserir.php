@@ -11,7 +11,8 @@ $data_inicio = $_POST['dateFrom'];
 $data_final = $_POST['dateTo'];
 $complemento = $_POST['message'];
 
-$sql = "";
+$sql = "INSERT INTO `viagem`(`id`, `nome`, `email`, `telefone`, `destino`, `pessoas`, `data_inicio`, `data_final`, `complemento`) 
+VALUES (NULL,'$nome_completo','$email','$telefone','$destino','$pessoas','$data_inicio','$data_final','$complemento')";
 
 $inserir = mysqli_query($conexao, $sql);
 

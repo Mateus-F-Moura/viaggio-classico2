@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../assets/css/styles.css">
-  <title>Veneza</title>
-</head>
+<?php include '../components/header.php'; ?>
 
 <body>
-  <header id="topo"></header>
-
   <main style="margin: auto;">
     <section class="hero">
       <div class="hero-banner">
@@ -25,7 +11,7 @@
 
       <h2 class="hero-title mt-0">Pontos turísticos em Veneza</h2>
       <div class="hero-actions">
-        <a href="./forms.html" class="btn btn-primary mt-3">Viaje e crie sua história</a>
+        <a href="./forms.php" class="btn btn-primary mt-3">Viaje e crie sua história</a>
       </div>
     </section>
 
@@ -91,12 +77,7 @@
         </div>
       </div>
     </section>
-
   </main>
-
-  <footer id="rodape" class=" mt-5"></footer>
-
-  <script src="../js/carregarHeaderEfooter.js"></script>
 </body>
 
-</html>
+<?php include '../components/footer.php'; ?>
