@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css" />
   <title>Viaje e crie sua história — Viaggio Classico</title>
 </head>
+
 <body>
   <header id="topo"></header>
 
@@ -15,7 +17,7 @@
     <h2 class="section-subtitle">Viaje e crie sua história</h2>
 
     <section class="mt-4">
-      <form id="requestForm" class="needs-validation mt-3" novalidate>
+      <form id="requestForm" class="needs-validation mt-3" action="../resources/inserir.php" method="post" novalidate>
         <div class="row g-3">
           <div class="col-md-6">
             <label for="fullName" class="form-label">Nome completo</label>
@@ -64,7 +66,8 @@
 
           <div class="col-12">
             <label for="message" class="form-label">Informações adicionais</label>
-            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Preferências, orçamento, restrições alimentares..."></textarea>
+            <textarea class="form-control" id="message" name="message" rows="4"
+              placeholder="Preferências, orçamento, restrições alimentares..."></textarea>
           </div>
 
           <div class="col-12">
@@ -84,4 +87,5 @@
 
   <script src="../js/carregarHeaderEfooter.js"></script>
 </body>
+
 </html>
