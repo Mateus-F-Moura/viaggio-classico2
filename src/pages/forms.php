@@ -5,7 +5,7 @@
     <h2 class="section-subtitle">Viaje e crie sua história</h2>
 
     <section class="mt-4">
-      <form id="requestForm" class="needs-validation mt-3" action="../resources/inserir.php" method="post" novalidate>
+      <form id="requestForm" class="needs-validation mt-3" action="../resources/acoes.php" method="post" novalidate>
         <div class="row g-3">
           <div class="col-md-6">
             <label for="fullName" class="form-label">Nome completo</label>
@@ -59,7 +59,7 @@
           </div>
 
           <div class="col-12">
-            <button class="btn btn-primary" type="submit">Enviar solicitação</button>
+            <button class="btn btn-primary" type="submit" name="create_usuario">Enviar solicitação</button>
             <a href="../index.php" class="btn btn-secondary ms-2">Voltar</a>
           </div>
         </div>

@@ -49,6 +49,9 @@
           </li>
         </ul>
       </div>
+      <div class="d-flex justify-content-end">
+        <a href="<?php echo $base_path; ?>pages/list.php" class="btn btn-secondary">Lista de Usuários</a>
+      </div>
     </div>
   </nav>
 </header>
