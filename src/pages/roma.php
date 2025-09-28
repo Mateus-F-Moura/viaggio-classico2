@@ -1,12 +1,63 @@
 <?php include '../components/header.php'; ?>
 
+<?php
+// A lógica PHP para buscar o clima permanece no topo, isso está perfeito.
+require_once '../api/clima.php';
+$cidadeNome = "Roma";
+$coordenadas = obterCoordenadas($cidadeNome);
+$climaInfo = ['nome' => $cidadeNome];
+if ($coordenadas) {
+    $clima = obterClima($coordenadas['latitude'], $coordenadas['longitude']);
+    if ($clima && isset($clima->current)) {
+        $dadosAtuais = $clima->current;
+        $climaInfo['temperatura'] = round($dadosAtuais->temperature_2m);
+        $climaInfo['descricao'] = traduzirCodigoClima($dadosAtuais->weather_code);
+        $climaInfo['sensacao'] = round($dadosAtuais->apparent_temperature);
+        $climaInfo['umidade'] = $dadosAtuais->relative_humidity_2m;
+    } else {
+        $climaInfo['erro'] = "Não foi possível obter os dados do clima.";
+    }
+} else {
+    $climaInfo['erro'] = "Não foi possível encontrar as coordenadas.";
+}
+?>
+
+<style>
+    .hero-banner {
+        position: relative; /* Essencial para o posicionamento do widget */
+    }
+    .clima-widget {
+        position: absolute;
+        bottom: 20px; /* Posição a partir de baixo */
+        left: 20px;   /* Posição a partir da esquerda */
+        background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+        color: #fff; /* Texto branco */
+        padding: 10px 20px;
+        border-radius: 12px;
+        backdrop-filter: blur(5px); /* Efeito de vidro fosco (moderno) */
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .widget-icon {
+        font-size: 2.5rem; /* Ícone grande */
+        color: #ffc107; /* Cor amarela para o ícone, remetendo ao sol */
+    }
+    .widget-temp {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .widget-desc {
+        font-size: 0.9rem;
+        text-transform: capitalize;
+    }
+</style>
+
 <body>
     <main>
         <section class="hero">
             <div class="hero-banner">
-                <div class="row d-flex justify-content-center mt-5">
-                    <img src="../assets/img/coliseu2.jpg" alt="Coliseu Interior" style="width:100%;">
-                </div>
+                <img src="../assets/img/coliseu2.jpg" alt="Coliseu Interior" style="width:100%;">
+                <?php include '../components/clima_hero.php'; ?>
             </div>
 
             <h2 class="hero-title mt-0">Pontos turísticos em Roma</h2>

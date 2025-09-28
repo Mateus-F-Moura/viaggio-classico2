@@ -215,7 +215,7 @@ footer.bg-dark {
 }
 
 /* responsivo: empilha e transforma a barra em decoração abaixo do título */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .hero .hero-title {
         text-align: center;
         padding: 0;
