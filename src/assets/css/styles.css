@@ -1,11 +1,9 @@
-/* Variáveis e cores do projeto */
 :root{
     --primary-color: #4A0E0E;
     --accent-color: #556B2F;
     --bg-light: #f8f9fa;
 }
 
-/* Reset / layout básico */
 html,
 body {
     height: 100%;
@@ -13,7 +11,6 @@ body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    /* manter texto centralizado apenas em títulos; conteúdo usa alinhamento padrão */
     text-align: left;
     background: white;
     margin: 0;
@@ -25,7 +22,6 @@ body {
     padding-inline: 1rem;
 }
 
-/* Navegação */
 nav {
     font-family: "Copernicus New Condensed", serif;
     font-size: large;
@@ -36,7 +32,6 @@ nav {
     font-weight: 700;
 }
 
-/* Marca / logo */
 .navbar-brand img {
     width: 150px;
     max-width: 100%;
@@ -44,7 +39,6 @@ nav {
     display: block;
 }
 
-/* Carousel e imagens */
 .carousel {
     margin: auto;
     width: 100%;
@@ -56,7 +50,6 @@ img {
     display: block;
 }
 
-/* Main e cards */
 main {
     flex: 1;
     padding-inline: clamp(1rem, 8%, 8rem);
@@ -69,7 +62,6 @@ main {
     justify-content: flex-start;
 }
 
-/* Títulos */
 h1,
 h2,
 h3 {
@@ -79,7 +71,6 @@ h3 {
     margin-top: 0;
 }
 
-/* Título da seção "Pontos turísticos que você deve ver:" — grande e estilizado */
 .section-subtitle {
     font-family: "Playfair Display", serif;
     font-size: clamp(32px, 5vw, 64px);
@@ -95,7 +86,6 @@ h3 {
     text-transform: none;
 }
 
-/* linha decorativa à direita em telas largas, passa para baixo e centraliza em telas pequenas */
 .section-subtitle::after {
     content: "";
     position: absolute;
@@ -109,7 +99,6 @@ h3 {
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-/* responsivo: centraliza e reduz a decoração */
 @media (max-width: 991px) {
     .section-subtitle {
         text-align: center;
@@ -126,7 +115,6 @@ h3 {
     }
 }
 
-/* Cores utilitárias */
 .red {
     color: var(--primary-color);
 }
@@ -135,7 +123,6 @@ h3 {
     color: var(--accent-color);
 }
 
-/* Footer — suporta footer com classe bg-dark do Bootstrap */
 footer {
     background-color: var(--bg-light);
     padding: 20px;
@@ -143,28 +130,23 @@ footer {
     color: inherit;
 }
 
-/* Quando o footer usa bg-dark/text-light do Bootstrap, fazer override para aparência coerente */
 footer.bg-dark {
     background-color: #212529;
     color: #f8f9fa;
     border-top: none;
 }
 
-/* Curiosidade centralizada */
 .curiosidade .card {
     margin: 0 auto;
 }
 
-/* Botão primário personalizado */
 .btn-primary{
     background-color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
 }
 
-/* Fonte elegante para o título do "hero" */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-/* HERO: wrapper que organiza banner (esquerda) + título (direita) */
 .hero {
     display: flex;
     align-items: center;
@@ -187,7 +169,6 @@ footer.bg-dark {
     display: block;
 }
 
-/* Hero title — grande, elegante e com barra decorativa apontando para o banner */
 .hero .hero-title {
     font-family: "Playfair Display", serif;
     font-size: clamp(36px, 6vw, 72px);
@@ -200,11 +181,10 @@ footer.bg-dark {
     margin: 0;
 }
 
-/* barra decorativa entre banner e título (em telas largas) */
 .hero .hero-title::before {
     content: "";
     position: absolute;
-    left: -140px; /* ajusta a distância da barra em relação ao título */
+    left: -140px;
     top: 50%;
     transform: translateY(-50%);
     height: 8px;
@@ -214,7 +194,6 @@ footer.bg-dark {
     box-shadow: 0 8px 26px rgba(0,0,0,0.12);
 }
 
-/* responsivo: empilha e transforma a barra em decoração abaixo do título */
 @media (max-width: 768px) {
     .hero .hero-title {
         text-align: center;
@@ -230,19 +209,16 @@ footer.bg-dark {
         transform: none;
     }
 
-    /* reduz o espaço horizontal entre banner e título em mobile */
     .hero {
         gap: 1rem;
     }
 }
 
-/* garantir que as regras novas tenham precedência sobre seletores antigos */
 main > h2:first-of-type,
 main > h2:first-of-type + .row.d-flex {
     display: block !important;
 }
 
-/* CURIOsIDADE: card maior, centralizado e integrado ao design */
 .curiosidade {
     display: flex;
     justify-content: center;
@@ -258,16 +234,14 @@ main > h2:first-of-type + .row.d-flex {
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
     background: linear-gradient(180deg, #ffffff 0%, #f7fcf7 100%);
     border: 1px solid rgba(0,0,0,0.04);
-    color: #1b1b1b; /* texto escuro por padrão */
+    color: #1b1b1b;
 }
 
-/* Forçar cor escura mesmo que o HTML traga classes do Bootstrap que definem texto branco */
 .curiosidade .card,
 .curiosidade .card * {
     color: #1b1b1b !important;
 }
 
-/* Neutralizar backgrounds Bootstrap indesejados dentro da seção curiosidade */
 .curiosidade .card.text-bg-success,
 .curiosidade .card.text-bg-dark,
 .curiosidade .card.bg-success,
@@ -276,36 +250,31 @@ main > h2:first-of-type + .row.d-flex {
     color: #1b1b1b !important;
 }
 
-/* Deixar imagens e texto mais próximos nas seções de conteúdo */
 .row.align-content-center {
     display: flex !important;
-    flex-wrap: nowrap;            /* manter lado-a-lado enquanto houver espaço */
+    flex-wrap: nowrap;
     align-items: center;
     gap: 1.5rem;
 }
 
-/* regra base para cada coluna dentro do row.align-content-center */
 .row.align-content-center > .col {
     box-sizing: border-box;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
-/* coluna da imagem (primeira) — ocupar ~40% */
 .row.align-content-center > .col:first-child {
     flex: 0 0 40% !important;
     max-width: 40% !important;
     padding-right: 1rem;
 }
 
-/* coluna do texto (segunda) — ocupar o resto (~60%) */
 .row.align-content-center > .col:last-child {
     flex: 1 1 60% !important;
     max-width: 60% !important;
     padding-left: 0.5rem;
 }
 
-/* garantir que a imagem não force quebra */
 .row.align-content-center img {
     width: 100%;
     height: auto;
@@ -313,7 +282,6 @@ main > h2:first-of-type + .row.d-flex {
     margin-bottom: 0;
 }
 
-/* permitir quebra para telas pequenas (mantém comportamento responsivo) */
 @media (max-width: 991px) {
     .row.align-content-center {
         flex-wrap: wrap;
@@ -326,7 +294,6 @@ main > h2:first-of-type + .row.d-flex {
     }
 }
 
-/* Ajustes responsivos */
 @media (max-width: 768px) {
     h1, h2, h3 {
         font-size: 28px;
@@ -345,7 +312,6 @@ main > h2:first-of-type + .row.d-flex {
     }
 }
 
-/* Ajustes responsivos: volta ao fluxo vertical em telas pequenas */
 @media (max-width: 991px) {
     main > h2:first-of-type,
     main > h2:first-of-type + .row.d-flex {
@@ -376,7 +342,6 @@ main > h2:first-of-type + .row.d-flex {
     }
 }
 
-/* Curiosidades: cards lado a lado, responsivo */
 .curiosidade .row {
     display: flex;
     gap: 1rem;
@@ -393,7 +358,6 @@ main > h2:first-of-type + .row.d-flex {
     flex-direction: column;
 }
 
-/* responsividade */
 @media (max-width: 991px) {
     .curiosidade .col-md-4 {
         flex: 0 0 100%;
@@ -404,12 +368,10 @@ main > h2:first-of-type + .row.d-flex {
     }
 }
 
-/* remover cabeçalho "Curiosidade" padrão nas cards da seção curiosidade */
 .curiosidade .card .card-header {
     display: none;
 }
 
-/* título estilizado dentro do card (usa Playfair Display já importada) */
 .card-stylized-title {
     font-family: "Playfair Display", serif;
     font-size: clamp(18px, 2.4vw, 24px);
@@ -421,7 +383,6 @@ main > h2:first-of-type + .row.d-flex {
     line-height: 1.05;
 }
 
-/* pequena barra decorativa à direita do título do card */
 .card-stylized-title::after {
     content: "";
     position: absolute;
@@ -435,7 +396,6 @@ main > h2:first-of-type + .row.d-flex {
     box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
-/* reduzir o espaçamento do subtítulo interno (h5/card-title) quando usar o novo título */
 .curiosidade .card .card-title {
     margin-top: 0.25rem;
     font-size: 1rem;
@@ -443,7 +403,6 @@ main > h2:first-of-type + .row.d-flex {
     color: #333 !important;
 }
 
-/* responsivo: barra decorativa vira linha abaixo do título em telas pequenas */
 @media (max-width: 576px) {
     .card-stylized-title::after {
         display: block;
@@ -455,13 +414,11 @@ main > h2:first-of-type + .row.d-flex {
     }
 }
 
-/* remover barra decorativa do título da hero */
 .hero .hero-title::before {
     display: none !important;
     content: none !important;
 }
 
-/* remover barra decorativa dos títulos estilizados dos cards de curiosidade */
 .card-stylized-title::after {
     display: none !important;
     content: none !important;
