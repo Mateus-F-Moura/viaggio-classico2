@@ -33,7 +33,7 @@ Este repositório foi criado para demonstrar domínio de desenvolvimento web PHP
 ├── index.php                # Página inicial/listagem
 ├── /pages                   # CRUD (create.php, update.php, etc.)
 ├── /includes                # Conexão com banco, controle de API e helpers
-├── /assets                  # Imagens, CSS, JS
+├── /assets                  # Imagens, CSS
 ├── /sql                     # Script de criação/importação do banco
 └── README.md
 ```
