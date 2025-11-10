@@ -59,10 +59,6 @@ Este repositório foi criado para demonstrar domínio de desenvolvimento web PHP
 4. (Opcional) Configure variáveis/env para endpoint da OpenMeteo se desejar customizar.
 5. Execute em um servidor web local e acesse `http://localhost/Viaggio-Classico/index.php`.
 
-## Demonstração
-
-> Adicione aqui prints, GIFs ou [link para o projeto online, se disponível](#).
-
 ---
 
 ## Diferenciais do Projeto
