@@ -1,74 +1,87 @@
 # Viaggio Classico
 
-[![License](https://img.shields.io/github/license/Mateus-F-Moura/Viaggio-Classico)](LICENSE)
+[![License](https://img.shields.io/github/license/Mateus-F-Moura/Viaggio-Classico)](https://github.com/Mateus-F-Moura/Viaggio-Classico/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Mateus-F-Moura/Viaggio-Classico)](https://github.com/Mateus-F-Moura/Viaggio-Classico/stargazers)
 
-## Sobre o Projeto
+## 📝 About The Project
 
-**Viaggio Classico** é um projeto CRUD completo, com frontend e backend desenvolvidos em **PHP puro**. Além das operações clássicas de cadastro, leitura, atualização e exclusão de registros, integra uma API externa de clima da [OpenMeteo](https://open-meteo.com/) para enriquecer a experiência do usuário com informações dinâmicas sobre condições meteorológicas nos destinos cadastrados.
+**Viaggio Classico** is a complete CRUD project with frontend and backend developed in **pure PHP**. Beyond traditional registration operations (create, read, update, and delete), it integrates an external weather API from [OpenMeteo](https://open-meteo.com/) to enrich the user experience with dynamic weather information about registered destinations.
 
-Este repositório foi criado para demonstrar domínio de desenvolvimento web PHP sem frameworks, integração com APIs externas e atenção à organização e boas práticas, sendo ideal como amostra para recrutadores.
+This repository was created to demonstrate proficiency in PHP web development without frameworks, integration with external APIs, and attention to organization and best practices, making it ideal as a portfolio piece for recruiters.
 
-## Funcionalidades
+---
 
-- Cadastro, consulta, atualização e remoção de viagens (CRUD)
-- Integração com a API OpenMeteo para exibir clima por localização
-- Frontend responsivo e de fácil navegação
-- Backend robusto em PHP, com código limpo e bem documentado
-- Validações no frontend e backend
-- Estrutura organizada, separando apresentação, lógica e dados
-- Pronto para customização ou extensão
+## ✨ Features
 
-## Tecnologias Utilizadas
+- **Travel CRUD** (Create, Read, Update, Delete)
+- **Integration with OpenMeteo API** to display weather by location
+- **Responsive frontend** with easy navigation
+- **Robust PHP backend** with clean, well-documented code
+- **Frontend and backend validations**
+- **Organized structure**, separating presentation, logic, and data
+- **Ready for customization or extension**
 
-- **PHP** (backend, integração com API externa, renderização do frontend)
-- **HTML5 e CSS3** (estrutura e apresentação visual)
-- **MySQL** (persistência dos dados)
-- **OpenMeteo API** (consumo de dados climáticos em tempo real)
+---
 
-## Estrutura do Projeto
+## 🛠️ Technologies Used
+
+- **PHP** (backend, external API integration, frontend rendering)
+- **HTML5 and CSS3** (structure and visual presentation)
+- **MySQL** (data persistence)
+- **OpenMeteo API** (real-time weather data consumption)
+
+---
+
+## 📂 Project Structure
 
 ```
 .
-├── index.php                # Página inicial/listagem
-├── /pages                   # CRUD (create.php, update.php, etc.)
-├── /includes                # Conexão com banco, controle de API e helpers
-├── /assets                  # Imagens, CSS
-├── /sql                     # Script de criação/importação do banco
+├── index.php              # Initial page/listing
+├── /pages                 # CRUD (create.php, update.php, etc.)
+├── /includes              # Database connection, API control, and helpers
+├── /assets                # Images, CSS
+├── /sql                   # Database creation/import script
 └── README.md
 ```
 
-## Como rodar localmente
+---
 
-### Pré-requisitos
+## 🚀 How to Run Locally
+
+### Prerequisites
 
 - PHP >= 7.x
-- Servidor web (Apache, Nginx, ou embutido do PHP)
+- Web server (Apache, Nginx, or PHP built-in)
 - MySQL/MariaDB
-- Navegador web
+- Web browser
 
-### Passos
+### Steps
 
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/Mateus-F-Moura/Viaggio-Classico.git
-    cd Viaggio-Classico
-    ```
-2. Importe o script SQL (`/sql/viaggio_classico.sql`) no seu banco de dados.
-3. Configure a conexão com o BD em `/includes/db.php`.
-4. (Opcional) Configure variáveis/env para endpoint da OpenMeteo se desejar customizar.
-5. Execute em um servidor web local e acesse `http://localhost/Viaggio-Classico/index.php`.
+1. **Clone the repository:**
 
----
+```bash
+git clone https://github.com/Mateus-F-Moura/Viaggio-Classico.git
+cd Viaggio-Classico
+```
 
-## Diferenciais do Projeto
+2. **Import the SQL script** (`/sql/viaggio_classico.sql`) into your database.
 
-- Integração real com API externa (OpenMeteo)
-- Código limpo, separado e comentado
-- Boas práticas de PHP e web clássica
-- Pronto para customização, estudo e uso profissional
-- Fácil entendimento por recrutadores; ideal para seleção de vagas PHP ou fullstack
+3. **Configure the database connection** in `/includes/db.php`.
+
+4. **(Optional) Configure environment variables** for the OpenMeteo API endpoint if you wish to customize.
+
+5. **Run on a local web server** and access `http://localhost/Viaggio-Classico/index.php`.
 
 ---
 
-**Este repositório foi estruturado para demonstrar habilidades reais de desenvolvimento web com PHP e integração de APIs externas. Sinta-se à vontade para explorar, executar ou entrar em contato!**
+## 🎯 Project Highlights
+
+- Real integration with external API (OpenMeteo)
+- Clean, separated, and well-commented code
+- Classic PHP and web best practices
+- Ready for customization, study, and professional use
+- Easy understanding for recruiters; ideal for PHP or fullstack job applications
+
+---
+
+**This repository was designed to showcase real web development skills with PHP and external API integration. Feel free to explore, run, or get in touch!**
